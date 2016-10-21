@@ -29,30 +29,35 @@
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.backgroundColor = [UIColor yellowColor];
         [btnArr addObject:btn];
+        [btn addTarget:self action:@selector(btnClick1) forControlEvents:UIControlEventTouchUpInside];
     }
     
     {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.backgroundColor = [UIColor yellowColor];
         [btnArr addObject:btn];
+        [btn addTarget:self action:@selector(btnClick2) forControlEvents:UIControlEventTouchUpInside];
     }
     
     {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.backgroundColor = [UIColor yellowColor];
         [btnArr addObject:btn];
+        [btn addTarget:self action:@selector(btnClick3) forControlEvents:UIControlEventTouchUpInside];
     }
     
     {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.backgroundColor = [UIColor yellowColor];
         [btnArr addObject:btn];
+        [btn addTarget:self action:@selector(btnClick4) forControlEvents:UIControlEventTouchUpInside];
     }
     
     {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.backgroundColor = [UIColor yellowColor];
         [btnArr addObject:btn];
+        [btn addTarget:self action:@selector(btnClick5) forControlEvents:UIControlEventTouchUpInside];
     }
     
     _controlBar = [YJStretchToolBar toolBarWithButtons:btnArr barItemSize:CGSizeMake(50, 50) portraitPoint:CGPointMake(0, CGRectGetMidY(self.view.frame) - 25 + 1) landscapePoint:CGPointMake(CGRectGetHeight(self.view.frame) * 0.5 - 25 - 1, 0)];
@@ -83,6 +88,31 @@
 - (IBAction)demensionChange:(UISlider *)sender {
     _demension.text = @((int)sender.value).stringValue;
     _controlBar.demension = sender.value;
+}
+
+- (void)btnClick1
+{
+    NSLog(@"%@ clicked", NSStringFromSelector(_cmd));
+}
+
+- (void)btnClick2
+{
+    NSLog(@"%@ clicked", NSStringFromSelector(_cmd));
+}
+
+- (void)btnClick3
+{
+    NSLog(@"%@ clicked", NSStringFromSelector(_cmd));
+}
+
+- (void)btnClick4
+{
+    NSLog(@"%@ clicked", NSStringFromSelector(_cmd));
+}
+
+- (void)btnClick5
+{
+    NSLog(@"%@ clicked", NSStringFromSelector(_cmd));
 }
 
 @end

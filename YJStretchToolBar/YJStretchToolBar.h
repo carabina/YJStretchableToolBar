@@ -18,8 +18,8 @@
 @property (nonatomic) CGFloat demension;
 
 + (instancetype)toolBarWithButtons:(NSArray<UIButton *> *)buttons
-                                barItemSize:(CGSize)barItemSize
-                              portraitPoint:(CGPoint)portraitPoint
-                             landscapePoint:(CGPoint)landscapePoint;
+                       barItemSize:(CGSize)barItemSize
+                     portraitPoint:(CGPoint)portraitPoint
+                    landscapePoint:(CGPoint)landscapePoint;
 
 @end

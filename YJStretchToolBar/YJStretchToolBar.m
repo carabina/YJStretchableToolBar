@@ -225,9 +225,9 @@ CGSize ScreenSize() {
 }
 
 + (instancetype)toolBarWithButtons:(NSArray<UIButton *> *)buttons
-                                barItemSize:(CGSize)barItemSize
-                              portraitPoint:(CGPoint)portraitPoint
-                             landscapePoint:(CGPoint)landscapePoint
+                       barItemSize:(CGSize)barItemSize
+                     portraitPoint:(CGPoint)portraitPoint
+                    landscapePoint:(CGPoint)landscapePoint
 {
     CGFloat barW = (buttons.count + 1) * barItemSize.width * 1.5;
     
