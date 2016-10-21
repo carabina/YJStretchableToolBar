@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'YJStretchableToolBar'
-  s.version      = '0.0.1'
+  s.version      = '1.0.1'
   s.summary      = 'An easy and stretchable tool bar.'
   s.homepage     = 'https://github.com/SplashZ/YJStretchableToolBar'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
